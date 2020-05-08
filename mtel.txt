@@ -1,0 +1,307 @@
+      85.0.0.0/8 is variably subnetted, 330 subnets, 10 masks
+B        85.118.64.0/22 [20/0] via 213.226.0.222, 7w0d
+B        85.118.68.0/23 [20/0] via 213.226.0.222, 7w0d
+B        85.118.70.0/24 [20/0] via 213.226.0.222, 7w0d
+B        85.118.71.0/24 [20/0] via 213.226.0.222, 7w0d
+B        85.118.72.0/23 [20/0] via 213.226.0.222, 7w0d
+B        85.118.74.0/24 [20/0] via 213.226.0.222, 7w0d
+B        85.118.76.0/22 [20/0] via 213.226.0.222, 7w0d
+B        85.118.80.0/22 [20/0] via 213.226.0.222, 7w0d
+B        85.118.84.0/24 [20/0] via 213.226.0.222, 7w0d
+B        85.118.85.0/24 [20/0] via 82.103.69.61, 7w0d
+B        85.118.86.0/24 [20/0] via 82.103.69.61, 7w0d
+S        85.118.88.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+B        85.118.90.0/24 [20/0] via 213.226.26.246, 2d08h
+B        85.118.91.0/24 [20/50] via 213.226.26.165, 1d22h
+B        85.118.92.0/24 [20/0] via 213.226.0.222, 7w0d
+B        85.118.93.0/24 [20/0] via 213.226.0.222, 7w0d
+B        85.118.94.0/24 [20/0] via 213.226.26.118, 6w2d
+B        85.118.95.0/24 [20/0] via 213.226.26.118, 6w2d
+sfk-peer-gw1>sho ip route 213.226.0.0 255.255.192.0 longer-prefixes
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is 213.226.7.248 to network 0.0.0.0
+
+S     213.226.0.0/18 is directly connected, Null0
+S     213.226.0.0/19 is directly connected, Null0
+      213.226.0.0/24 is variably subnetted, 23 subnets, 5 masks
+B        213.226.0.8/30 [200/0] via 213.226.7.248, 7w0d
+B        213.226.0.16/30 [200/0] via 213.226.7.253, 7w0d
+S        213.226.0.56/30 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.0.60/30 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+C        213.226.0.72/29 is directly connected, Port-channel5.4045
+L        213.226.0.74/32 is directly connected, Port-channel5.4045
+C        213.226.0.80/28 is directly connected, Port-channel5.4050
+L        213.226.0.93/32 is directly connected, Port-channel5.4050
+B        213.226.0.96/28 [200/0] via 213.226.7.224, 7w0d
+S        213.226.0.112/28 [1/0] via 213.226.0.173
+S        213.226.0.128/29
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+C        213.226.0.144/29 is directly connected, Port-channel5.4032
+L        213.226.0.146/32 is directly connected, Port-channel5.4032
+S        213.226.0.160/29 [1/0] via 213.226.0.173
+C        213.226.0.168/29 is directly connected, Port-channel5.994
+L        213.226.0.170/32 is directly connected, Port-channel5.994
+C        213.226.0.208/29 is directly connected, Port-channel5.2461
+L        213.226.0.210/32 is directly connected, Port-channel5.2461
+S        213.226.0.216/31
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.0.218/31
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+C        213.226.0.220/30 is directly connected, Port-channel6.1612
+L        213.226.0.221/32 is directly connected, Port-channel6.1612
+B        213.226.0.224/30 [200/0] via 213.226.7.224, 7w0d
+      213.226.1.0/24 is variably subnetted, 4 subnets, 2 masks
+S        213.226.1.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+B        213.226.1.0/30 [200/0] via 213.226.7.253, 7w0d
+B        213.226.1.8/30 [200/0] via 213.226.7.253, 7w0d
+B        213.226.1.32/30 [200/0] via 213.226.7.224, 7w0d
+      213.226.2.0/24 is variably subnetted, 8 subnets, 3 masks
+S        213.226.2.0/27 [1/0] via 213.226.0.173
+S        213.226.2.32/28 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.2.48/28 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.2.64/28 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.2.80/28 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.2.96/28 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.2.112/28
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.2.128/25 [1/0] via 213.226.5.253
+S     213.226.3.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+      213.226.4.0/24 is variably subnetted, 9 subnets, 5 masks
+B        213.226.4.4/30 [200/0] via 213.226.7.253, 7w0d
+B        213.226.4.16/31 [200/0] via 213.226.7.248, 7w0d
+C        213.226.4.80/29 is directly connected, TenGigabitEthernet4/21.3630
+L        213.226.4.81/32 is directly connected, TenGigabitEthernet4/21.3630
+C        213.226.4.92/30 is directly connected, Port-channel10.1397
+L        213.226.4.93/32 is directly connected, Port-channel10.1397
+S        213.226.4.112/29 [1/0] via 213.226.7.167
+S        213.226.4.192/27
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.4.224/27
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+      213.226.5.0/24 is variably subnetted, 3 subnets, 2 masks
+C        213.226.5.0/24 is directly connected, Port-channel5.5
+L        213.226.5.4/32 is directly connected, Port-channel5.5
+S        213.226.5.233/32 [1/0] via 213.226.0.148
+      213.226.6.0/24 is variably subnetted, 11 subnets, 2 masks
+S        213.226.6.0/24 [1/0] via 213.226.5.2
+S        213.226.6.27/32 [1/0] via 213.226.7.108
+S        213.226.6.89/32 [1/0] via 213.226.7.108
+S        213.226.6.95/32 [1/0] via 213.226.7.108
+S        213.226.6.115/32 [1/0] via 213.226.5.253
+S        213.226.6.151/32 [1/0] via 213.226.7.108
+S        213.226.6.152/32 [1/0] via 213.226.7.108
+S        213.226.6.199/32 [1/0] via 213.226.7.108
+S        213.226.6.210/32 [1/0] via 213.226.7.108
+S        213.226.6.229/32 [1/0] via 213.226.7.108
+S        213.226.6.239/32 [1/0] via 213.226.7.108
+      213.226.7.0/24 is variably subnetted, 27 subnets, 5 masks
+C        213.226.7.0/26 is directly connected, Port-channel5.2
+L        213.226.7.47/32 is directly connected, Port-channel5.2
+S        213.226.7.64/28 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+C        213.226.7.80/29 is directly connected, TenGigabitEthernet1/4.830
+L        213.226.7.81/32 is directly connected, TenGigabitEthernet1/4.830
+C        213.226.7.96/29 is directly connected, Port-channel5.1235
+L        213.226.7.97/32 is directly connected, Port-channel5.1235
+C        213.226.7.104/29 is directly connected, Port-channel5.1234
+L        213.226.7.106/32 is directly connected, Port-channel5.1234
+C        213.226.7.112/29 is directly connected, Port-channel5.2460
+L        213.226.7.113/32 is directly connected, Port-channel5.2460
+C        213.226.7.164/31 is directly connected, Port-channel20
+L        213.226.7.164/32 is directly connected, Port-channel20
+C        213.226.7.166/31 is directly connected, TenGigabitEthernet1/3
+L        213.226.7.166/32 is directly connected, TenGigabitEthernet1/3
+O        213.226.7.168/31 [110/2] via 213.226.7.165, 7w0d, Port-channel20
+O        213.226.7.170/31
+           [110/2] via 213.226.7.167, 7w0d, TenGigabitEthernet1/3
+S        213.226.7.200/29
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.7.208/29
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.7.216/29
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+O        213.226.7.224/32 [110/2] via 213.226.7.165, 7w0d, Port-channel20
+C        213.226.7.240/29 is directly connected, Port-channel5.2463
+L        213.226.7.244/32 is directly connected, Port-channel5.2463
+O        213.226.7.248/32
+           [110/2] via 213.226.7.167, 7w0d, TenGigabitEthernet1/3
+C        213.226.7.252/32 is directly connected, Loopback0
+O        213.226.7.253/32
+           [110/3] via 213.226.7.167, 7w0d, TenGigabitEthernet1/3
+           [110/3] via 213.226.7.165, 7w0d, Port-channel20
+B        213.226.7.254/32 [200/0] via 213.226.7.248, 7w0d
+      213.226.8.0/24 is variably subnetted, 2 subnets, 2 masks
+S        213.226.8.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.8.96/27 [1/0] via 213.226.26.201
+      213.226.9.0/24 is variably subnetted, 4 subnets, 2 masks
+S        213.226.9.0/24 [1/0] via 213.226.5.2
+S        213.226.9.39/32 [1/0] via 213.226.5.253
+S        213.226.9.210/32 [1/0] via 213.226.7.108
+S        213.226.9.237/32 [1/0] via 213.226.5.253
+S     213.226.10.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.11.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.12.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.13.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.14.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.15.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.16.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+B     213.226.17.0/24 [20/0] via 213.226.0.222, 7w0d
+      213.226.18.0/24 is variably subnetted, 2 subnets, 2 masks
+S        213.226.18.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+B        213.226.18.136/29 [200/0] via 213.226.7.253, 7w0d
+B     213.226.19.0/24 [20/0] via 213.226.0.222, 7w0d
+S     213.226.20.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.21.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.22.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.23.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.24.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.25.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+      213.226.26.0/24 is variably subnetted, 55 subnets, 5 masks
+S        213.226.26.0/24 is directly connected, Null0
+C        213.226.26.16/29 is directly connected, TenGigabitEthernet4/21.3010
+L        213.226.26.17/32 is directly connected, TenGigabitEthernet4/21.3010
+B        213.226.26.24/29 [200/0] via 213.226.7.248, 7w0d
+C        213.226.26.40/29 is directly connected, TenGigabitEthernet4/21.2999
+L        213.226.26.41/32 is directly connected, TenGigabitEthernet4/21.2999
+C        213.226.26.48/29 is directly connected, TenGigabitEthernet4/21.3207
+L        213.226.26.49/32 is directly connected, TenGigabitEthernet4/21.3207
+C        213.226.26.56/29 is directly connected, TenGigabitEthernet4/21.2345
+L        213.226.26.57/32 is directly connected, TenGigabitEthernet4/21.2345
+B        213.226.26.64/30 [200/0] via 213.226.7.224, 7w0d
+B        213.226.26.72/30 [200/0] via 213.226.7.248, 7w0d
+C        213.226.26.76/30 is directly connected, TenGigabitEthernet4/21.1503
+L        213.226.26.77/32 is directly connected, TenGigabitEthernet4/21.1503
+C        213.226.26.84/30 is directly connected, TenGigabitEthernet4/21.3213
+L        213.226.26.85/32 is directly connected, TenGigabitEthernet4/21.3213
+C        213.226.26.88/31 is directly connected, Port-channel5.15
+L        213.226.26.88/32 is directly connected, Port-channel5.15
+B        213.226.26.90/31 [200/0] via 213.226.7.224, 7w0d
+C        213.226.26.92/31 is directly connected, Port-channel5.12
+L        213.226.26.92/32 is directly connected, Port-channel5.12
+B        213.226.26.94/31 [200/0] via 213.226.7.224, 7w0d
+B        213.226.26.104/30 [200/0] via 213.226.7.248, 7w0d
+B        213.226.26.108/30 [200/0] via 213.226.7.253, 7w0d
+B        213.226.26.112/30 [200/0] via 213.226.7.253, 7w0d
+C        213.226.26.116/30 is directly connected, TenGigabitEthernet4/21.1701
+L        213.226.26.117/32 is directly connected, TenGigabitEthernet4/21.1701
+B        213.226.26.132/30 [200/0] via 213.226.7.224, 7w0d
+C        213.226.26.136/30 is directly connected, TenGigabitEthernet4/21.2969
+L        213.226.26.137/32 is directly connected, TenGigabitEthernet4/21.2969
+B        213.226.26.140/30 [200/0] via 213.226.7.248, 7w0d
+C        213.226.26.152/30 is directly connected, TenGigabitEthernet4/21.2011
+L        213.226.26.153/32 is directly connected, TenGigabitEthernet4/21.2011
+C        213.226.26.160/29 is directly connected, TenGigabitEthernet4/21.43
+L        213.226.26.161/32 is directly connected, TenGigabitEthernet4/21.43
+B        213.226.26.168/30 [200/0] via 213.226.7.224, 7w0d
+B        213.226.26.172/30 [200/0] via 213.226.7.224, 7w0d
+C        213.226.26.196/31 is directly connected, TenGigabitEthernet4/21.3220
+L        213.226.26.196/32 is directly connected, TenGigabitEthernet4/21.3220
+B        213.226.26.198/31 [200/0] via 213.226.7.224, 7w0d
+C        213.226.26.200/31 is directly connected, GigabitEthernet3/2
+L        213.226.26.200/32 is directly connected, GigabitEthernet3/2
+C        213.226.26.204/31 is directly connected, TenGigabitEthernet4/21.1881
+L        213.226.26.204/32 is directly connected, TenGigabitEthernet4/21.1881
+B        213.226.26.206/31 [200/0] via 213.226.7.224, 7w0d
+B        213.226.26.212/31 [200/0] via 213.226.7.224, 7w0d
+B        213.226.26.214/31 [200/0] via 213.226.7.224, 7w0d
+B        213.226.26.216/31 [200/0] via 213.226.7.248, 7w0d
+C        213.226.26.218/31 is directly connected, TenGigabitEthernet4/21.1651
+L        213.226.26.218/32 is directly connected, TenGigabitEthernet4/21.1651
+C        213.226.26.240/30 is directly connected, TenGigabitEthernet4/21.1500
+L        213.226.26.241/32 is directly connected, TenGigabitEthernet4/21.1500
+C        213.226.26.244/30 is directly connected, TenGigabitEthernet4/21.819
+L        213.226.26.245/32 is directly connected, TenGigabitEthernet4/21.819
+S        213.226.26.248/29
+           [1/0] via 213.226.26.242, TenGigabitEthernet4/21.1500
+S     213.226.27.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.28.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.29.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.30.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.31.0/24 [1/0] via 213.226.7.108
+S     213.226.34.0/24 [1/0] via 213.226.5.2
+S     213.226.35.0/24 [1/0] via 213.226.5.2
+B     213.226.36.0/24 [20/0] via 213.226.0.222, 7w0d
+S     213.226.37.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.38.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.39.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+B     213.226.40.0/24 [20/0] via 213.226.0.222, 7w0d
+S     213.226.41.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+      213.226.43.0/24 is variably subnetted, 3 subnets, 3 masks
+S        213.226.43.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+C        213.226.43.160/30 is directly connected, TenGigabitEthernet4/21.2116
+L        213.226.43.162/32 is directly connected, TenGigabitEthernet4/21.2116
+S     213.226.44.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S     213.226.45.0/24 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+      213.226.46.0/24 is variably subnetted, 5 subnets, 4 masks
+B        213.226.46.0/27 [200/0] via 213.226.7.224, 7w0d
+B        213.226.46.64/30 [200/0] via 213.226.7.224, 7w0d
+C        213.226.46.68/30 is directly connected, TenGigabitEthernet4/21.3532
+L        213.226.46.69/32 is directly connected, TenGigabitEthernet4/21.3532
+B        213.226.46.240/28 [200/0] via 213.226.7.224, 7w0d
+S     213.226.47.0/24 [1/0] via 213.226.0.173
+S     213.226.48.0/21 is directly connected, Null0
+B     213.226.48.0/24 [20/0] via 213.226.26.89, 07:47:02
+      213.226.50.0/24 is variably subnetted, 3 subnets, 3 masks
+S        213.226.50.0/24 is directly connected, Null0
+S        213.226.50.128/26 [1/0] via 213.226.5.2
+B        213.226.50.240/28 [20/0] via 213.226.0.222, 7w0d
+B     213.226.51.0/24 [20/0] via 213.226.0.222, 7w0d
+B     213.226.56.0/24 [20/0] via 213.226.0.222, 7w0d
+B     213.226.57.0/24 [20/0] via 213.226.0.222, 7w0d
+B     213.226.59.0/24 [20/0] via 213.226.0.222, 7w0d
+      213.226.60.0/27 is subnetted, 6 subnets
+S        213.226.60.64 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.60.96 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.60.128 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.60.160 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.60.192 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.60.224 [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+      213.226.62.0/24 is variably subnetted, 12 subnets, 2 masks
+S        213.226.62.16/28
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.48/28
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.80/28
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.112/28
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.220/32
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.221/32
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.222/32
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.223/32
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.248/32
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.249/32
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.250/32
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+S        213.226.62.251/32
+           [1/0] via 213.226.26.197, TenGigabitEthernet4/21.3220
+B     213.226.63.0/24 [20/0] via 213.226.0.222, 7w0d
+sfk-peer-gw1>  sho ip route 176.222.0.0 255.255.240.0 longer-prefixes
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override
+
+Gateway of last resort is 213.226.7.248 to network 0.0.0.0
+
+      176.222.0.0/20 is subnetted, 1 subnets
+S        176.222.0.0 is directly connected, Null0
