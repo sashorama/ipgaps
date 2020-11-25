@@ -9,8 +9,8 @@ def load_networks(input_file):
  with open(input_file, "r") as f_in:
      for line in f_in:
          line = line.lower()
-         if (line.find('null') != -1 or line.find('sh') != -1 or line.find('dscd') != -1):
-             #print('Skipping aggregates to null ',line)
+         if line.find('null') != -1 or line.find('sh') != -1 or line.find('dscd') != -1 or line.find('blackh') != -1:
+             print('Skipping aggregates:',line)
              continue
          m = re.search(r"(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}/\d{1,2})", line)
          if m is not None:
@@ -28,12 +28,14 @@ def get_free_networks(aggregate_networks, routed_networks):
  Very slow O(n*n) search. Used for testing of other faster searches."""
  free_networks = []
  for str_network in aggregate_networks:
-     print(str_network)
+     print(str_network)                      lkwe
      free_networks.append(ipaddress.ip_network(str_network))
  for routed_net in routed_networks:
      for free_net in free_networks:
          if (routed_net.network_address >= free_net.network_address and
                      routed_net.broadcast_address <= free_net.broadcast_address):
+
+
              new_networks = list(free_net.address_exclude(routed_net))
              free_networks.remove(free_net)
              for y in new_networks:
@@ -116,7 +118,7 @@ spnet_mega_networks = (
 
 
 input_file = "main_vrf.txt"
-output_file = "tree_test.txt"
+output_file = "free_networks.txt"
 routed_networks = []
 free_networks = []
 aggregate_networks = spnet_mega_networks+blizoo_networks+mtel_networks

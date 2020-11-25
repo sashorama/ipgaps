@@ -1,64 +1,92 @@
 
-show route vrf main longer 37.63.0.0/17
-show route vrf main longer 46.238.0.0/18
-show route vrf main longer 62.204.128.0/19
-show route vrf main longer 77.70.0.0/17
-show route vrf main longer 78.83.0.0/16
-show route vrf main longer 78.90.0.0/16
-show route vrf main longer 82.103.64.0/18
-show route vrf main longer 82.147.128.0/19
-show route vrf main longer 83.97.24.0/21
-show route vrf main longer 84.242.128.0/18
-show route vrf main longer 85.91.128.0/19
-show route vrf main longer 85.196.128.0/18
-show route vrf main longer 87.227.128.0/17
-show route vrf main longer 88.203.128.0/17
-show route vrf main longer 89.190.192.0/19
-show route vrf main longer 92.247.0.0/16
-show route vrf main longer 95.111.0.0/17
-show route vrf main longer 176.12.0.0/18
-show route vrf main longer 213.222.32.0/19
-show route vrf main longer 185.151.156.0/22
-show route vrf main longer 185.224.160.0/22
-    show route vrf main longer 195.24.32.0/19
-show route vrf main longer 195.34.96.0/19
-show route vrf main longer 195.149.248.0/21
-    show route vrf main longer 212.36.0.0/19
-show route vrf main longer 212.50.0.0/19
-show route vrf main longer 212.91.160.0/19
-show route vrf main longer 212.95.160.0/19
-show route vrf main longer 217.79.32.0/20
-show route vrf main longer 213.169.32.0/19
+#show route vrf main longer 37.63.0.0/17
+#show route vrf main longer 46.238.0.0/18
+#show route vrf main longer 62.204.128.0/19
+#show route vrf main longer 77.70.0.0/17
+#show route vrf main longer 78.83.0.0/16
+#show route vrf main longer 78.90.0.0/16
+#show route vrf main longer 82.103.64.0/18
+#show route vrf main longer 82.147.128.0/19
+#show route vrf main longer 83.97.24.0/21
+#show route vrf main longer 84.242.128.0/18
+#show route vrf main longer 85.91.128.0/19
+#show route vrf main longer 85.196.128.0/18
+#show route vrf main longer 87.227.128.0/17
+#show route vrf main longer 88.203.128.0/17
+#show route vrf main longer 89.190.192.0/19
+#show route vrf main longer 92.247.0.0/16
+#show route vrf main longer 95.111.0.0/17
+#show route vrf main longer 176.12.0.0/18
+#show route vrf main longer 213.222.32.0/19
+#show route vrf main longer 185.151.156.0/22
+#show route vrf main longer 185.224.160.0/22
+#show route vrf main longer 195.24.32.0/19
+#show route vrf main longer 195.34.96.0/19
+#show route vrf main longer 195.149.248.0/21
+#show route vrf main longer 212.36.0.0/19
+#show route vrf main longer 212.50.0.0/19
+#show route vrf main longer 212.91.160.0/19
+#show route vrf main longer 212.95.160.0/19
+#show route vrf main longer 217.79.32.0/20
+#show route vrf main longer 213.169.32.0/19
 
-
-sfk-peer-gw1#
-
-sho ip route 85.118.64.0  255.255.224.0 longer-prefixes
-sho ip route 213.226.0.0 255.255.192.0 longer-prefixes
-sho ip route 176.222.0.0 255.255.240.0 longer-prefixes
+environment no more
+show router 20002 route-table 37.63.0.0/17      longer
+show router 20002 route-table 46.238.0.0/18     longer
+show router 20002 route-table 62.204.128.0/19   longer
+show router 20002 route-table 77.70.0.0/17      longer
+show router 20002 route-table 78.83.0.0/16      longer
+show router 20002 route-table 78.90.0.0/16      longer
+show router 20002 route-table 82.103.64.0/18    longer
+show router 20002 route-table 82.147.128.0/19   longer
+show router 20002 route-table 83.97.24.0/21     longer
+show router 20002 route-table 84.242.128.0/18   longer
+show router 20002 route-table 85.91.128.0/19    longer
+show router 20002 route-table 85.196.128.0/18   longer
+show router 20002 route-table 87.227.128.0/17   longer
+show router 20002 route-table 88.203.128.0/17   longer
+show router 20002 route-table 89.190.192.0/19   longer
+show router 20002 route-table 92.247.0.0/16     longer
+show router 20002 route-table 95.111.0.0/17     longer
+show router 20002 route-table 176.12.0.0/18     longer
+show router 20002 route-table 213.222.32.0/19   longer
+show router 20002 route-table 185.151.156.0/22  longer
+show router 20002 route-table 185.224.160.0/22  longer
+show router 20002 route-table 195.24.32.0/19    longer
+show router 20002 route-table 195.34.96.0/19    longer
+show router 20002 route-table 195.149.248.0/21  longer
+show router 20002 route-table 212.36.0.0/19     longer
+show router 20002 route-table 212.50.0.0/19     longer
+show router 20002 route-table 212.91.160.0/19   longer
+show router 20002 route-table 212.95.160.0/19   longer
+show router 20002 route-table 217.79.32.0/20    longer
+show router 20002 route-table 213.169.32.0/19   longer
+show router 20002 route-table 85.118.64.0/19 longer
+show router 20002 route-table 213.226.0.0/18 longer
+show router 20002 route-table 176.222.0.0/20 longer
 
 sflb-br-gw1#
 
-show route forwarding-table table Flat matching 5.53.128.0/17
-show route forwarding-table table Flat matching 37.130.240.0/21
-show route forwarding-table table Flat matching 46.232.152.0/21
-show route forwarding-table table Flat matching 62.221.128.0/19
-show route forwarding-table table Flat matching 77.236.160.0/19
-show route forwarding-table table Flat matching 77.244.192.0/20
-show route forwarding-table table Flat matching 80.253.48.0/20
-show route forwarding-table table Flat matching 84.252.0.0/18
-show route forwarding-table table Flat matching 85.130.0.0/17
-show route forwarding-table table Flat matching 87.97.128.0/17
-show route forwarding-table table Flat matching 89.186.200.0/21
-    show route forwarding-table table Flat matching 89.215.0.0/16
-show route forwarding-table table Flat matching 89.253.128.0/18
-show route forwarding-table table Flat matching 95.140.208.0/20
-show route forwarding-table table Flat matching 130.204.0.0/16
-show route forwarding-table table Flat matching 151.251.0.0/16
-show route forwarding-table table Flat matching 194.187.132.0/22
-show route forwarding-table table Flat matching 212.104.96.0/19
-show route forwarding-table table Flat matching 213.191.160.0/19
-show route forwarding-table table Flat matching 217.9.224.0/20
-show route forwarding-table table Flat matching 217.10.240.0/20
-show route forwarding-table table Flat matching 217.18.240.0/20
+show route forwarding-table table Flat matching 5.53.128.0/17 | no-more
+show route forwarding-table table Flat matching 37.130.240.0/21 | no-more
+show route forwarding-table table Flat matching 46.232.152.0/21 | no-more
+show route forwarding-table table Flat matching 62.221.128.0/19 | no-more
+show route forwarding-table table Flat matching 77.236.160.0/19 | no-more
+show route forwarding-table table Flat matching 77.244.192.0/20 | no-more
+show route forwarding-table table Flat matching 80.253.48.0/20 | no-more
+show route forwarding-table table Flat matching 84.252.0.0/18 | no-more
+show route forwarding-table table Flat matching 85.130.0.0/17 | no-more
+show route forwarding-table table Flat matching 87.97.128.0/17 | no-more
+show route forwarding-table table Flat matching 89.186.200.0/21 | no-more
+show route forwarding-table table Flat matching 89.215.0.0/16 | no-more
+show route forwarding-table table Flat matching 89.253.128.0/18 | no-more
+show route forwarding-table table Flat matching 95.140.208.0/20 | no-more
+show route forwarding-table table Flat matching 130.204.0.0/16 | no-more
+show route forwarding-table table Flat matching 151.251.0.0/16 | no-more
+show route forwarding-table table Flat matching 194.187.132.0/22 | no-more
+show route forwarding-table table Flat matching 212.104.96.0/19 | no-more
+show route forwarding-table table Flat matching 213.191.160.0/19 | no-more
+show route forwarding-table table Flat matching 217.9.224.0/20 | no-more
+show route forwarding-table table Flat matching 217.10.240.0/20 | no-more
+show route forwarding-table table Flat matching 217.18.240.0/20 | no-more
 
