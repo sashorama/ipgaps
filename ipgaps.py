@@ -10,7 +10,7 @@ def load_networks(input_file):
      for line in f_in:
          line = line.lower()
          if line.find('null') != -1 or line.find('sh') != -1 or line.find('dscd') != -1 or line.find('blackh') != -1:
-             print('Skipping aggregates:',line)
+             #print('Skipping aggregates:',line)
              continue
          m = re.search(r"(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}/\d{1,2})", line)
          if m is not None:
