@@ -28,7 +28,7 @@ def get_free_networks(aggregate_networks, routed_networks):
  Very slow O(n*n) search. Used for testing of other faster searches."""
  free_networks = []
  for str_network in aggregate_networks:
-     print(str_network)                      lkwe
+     #print(str_network)
      free_networks.append(ipaddress.ip_network(str_network))
  for routed_net in routed_networks:
      for free_net in free_networks:
